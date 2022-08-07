@@ -1,3 +1,5 @@
+# Experimenting with changes in Alex's code
+
 import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for
 # working with sample data.
@@ -6,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import fft
 
-from adc import *
+from adc import * 
 
 # https://github.com/alexlib/engineering_experiments_measurements_course/blob/master/notebooks/a2d/Reconstruction_periodic_signal_Cardinal_series.ipynb
 
@@ -15,7 +17,7 @@ st.title('ADE solution: diffusion only')
 @st.cache
 def create_data():
     t = np.linspace(0,10,10000) # almost continuous
-    y = 9+np.sin(2*np.pi*0.1*t)
+    y = t**2
     return (t,y)
 
 
