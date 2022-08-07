@@ -10,7 +10,7 @@ from adc import *
 
 # https://github.com/alexlib/engineering_experiments_measurements_course/blob/master/notebooks/a2d/Reconstruction_periodic_signal_Cardinal_series.ipynb
 
-st.title('A/D app')
+st.title('ADE solution: diffusion only')
 
 @st.cache
 def create_data():
